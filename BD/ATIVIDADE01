@@ -1,0 +1,58 @@
+﻿
+-- 01
+
+SELECT * FROM escolas;
+
+--02 
+
+SELECT nome_eescola FROM escolas ORDER BY nome_eescola;
+
+--03
+
+SELECT nome_eescola, nome_cidade FROM escolas, cidades
+WHERE escolas.cod_cidade = cidades.cod_cidade 
+ORDER BY nome_eescola, nome_cidade;
+
+
+--04
+
+SELECT nome_eescola, nome_cidade, sigla_estado 
+FROM escolas, cidades, estados 
+WHERE escolas.cod_cidade = cidades.cod_cidade AND cidades.cod_estado = estados.cod_estado
+ORDER BY nome_eescola, nome_cidade, sigla_estado;
+
+--05
+
+SELECT nome_eescola, nome_cidade, sigla_estado 
+FROM escolas, cidades, estados 
+WHERE escolas.cod_cidade = cidades.cod_cidade
+AND cidades.cod_estado = estados.cod_estado
+AND (estados.sigla_estado = 'PB' OR estados.sigla_estado = 'RN');
+
+--06 
+
+SELECT nome_eescola, nome_cidade 
+FROM escolas, cidades 
+WHERE escolas.cod_cidade = cidades.cod_cidade
+AND cidades.nome_cidade = 'SOORETAMA';
+
+--07
+
+SELECT nome_eescola, nome_cidade, sigla_estado 
+FROM escolas, cidades, estados 
+WHERE escolas.nome_eescola = 'MARVIN EEEP'
+AND escolas.cod_cidade = cidades.cod_cidade
+AND cidades.cod_estado = estados.cod_estado;
+
+
+
+SELECT nome_eescola
+FROM escolas where (escolas.nome_eescola = 'MARVIN EEEP');
+
+--08
+
+SELECT COUNT(nome_eescola) 
+FROM escolas, cidades, estados 
+WHERE escolas.cod_cidade = cidades.cod_cidade
+AND cidades.cod_estado = estados.cod_estado
+AND (estados.sigla_estado = 'SP');
