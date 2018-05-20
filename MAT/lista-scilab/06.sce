@@ -10,8 +10,9 @@ soma = sum(matriz);
 media = soma/(l*c);
 maior = max(matriz);
 menor = min(matriz);
-
+raiz = sqrt(soma);
 disp("Media do matriz "+ string(media));
+disp("Raiz "+ string(raiz));
 disp("Soma do matriz "+ string(soma));
 disp("Maior n do matriz "+ string(maior));
 disp("menor n do matriz "+ string(menor));
