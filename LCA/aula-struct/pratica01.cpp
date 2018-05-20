@@ -22,7 +22,7 @@ void getInt(char msg[20], int *p) {
   scanf("%d", p);
 }
 
-void getString(char msg[20], const char* s) {
+void getString(char msg[20], char *s) {
   printf("%s\n", msg);
   scanf("%[^\n]s", s);
 }
@@ -33,20 +33,20 @@ int main() {
 
   getString("Nome:", c.nome);
 
-  getInt("Dia nascimento:", &c.dia);
-  getInt("Mes nascimento:", &c.mes);
-  getInt("Ano nascimento:", &c.ano);
+  // getInt("Dia nascimento:", &c.dia);
+  // getInt("Mes nascimento:", &c.mes);
+  // getInt("Ano nascimento:", &c.ano);
 
-  getString("Nome pai:", c.pai);
-  getString("Nome mae:", c.mae);
-  getString("Sexo:", &c.sexo);
-  getString("Rua:", c.rua);
-  getInt("Numero:", &c.numero);
-  getString("Bairro:", c.bairro);
-  getString("Cidade:", c.cidade);
+  // getString("Nome pai:", c.pai);
+  // getString("Nome mae:", c.mae);
+  // getString("Sexo:", &c.sexo);
+  // getString("Rua:", c.rua);
+  // getInt("Numero:", &c.numero);
+  // getString("Bairro:", c.bairro);
+  // getString("Cidade:", c.cidade);
 
-  getInt("DDD:", &c.ddd);
-  getInt("Fone:", &c.fone);
+  // getInt("DDD:", &c.ddd);
+  // getInt("Fone:", &c.fone);
 
   printf("\n");
   printf("%s\n", c.nome);
