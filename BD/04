@@ -1,0 +1,14 @@
+﻿
+
+SELECT * FROM escolas
+--01
+SELECT nome_escola, total_alunos, (SELECT SUM(total_alunos) as "Total_Geral"  FROM escolas) FROM escolas
+
+--02
+SELECT nome_escola, total_alunos, media_enem, (SELECT AVG(media_enem) as "Media"  FROM escolas) FROM escolas
+
+
+--03
+
+	
+--04
