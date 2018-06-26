@@ -52,7 +52,7 @@ void moverLebre(int *p) {
     *p += -6;
   }else {
     *p += 1;
-  }*p += 3;
+  }*p += 0;
 
   if(*p < 1)
     *p = 1;
@@ -65,7 +65,7 @@ void moverTartaruga(int *p) {
   if(prob == 50) {
     *p += 5;
   } else if(prob == 10) {
-    *p += -6;
+    *p += 0;
   }
 
   if(*p < 1)
