@@ -1,0 +1,12 @@
+*.class
+*.jar
+*.war
+*.ear
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
